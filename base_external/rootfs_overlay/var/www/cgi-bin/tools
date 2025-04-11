@@ -1,11 +1,9 @@
 #!/bin/sh
 #
-#	This script will pull the tool states from the "database" and returns a JSON object with all the tool states. 
+#       This script will pull the tool states from the "database" and returns a JSON object with all the tool states.
 #
 echo "Content-type: application/json"
 echo
 
-line=`cat /root/database/90`
-echo "{tools : [{'toolid' : 'T512', 'toolbox' : 90, 'state' : 'IN'}, {'toolid' : 'T159', 'toolbox' : 90, 'state' : 'OUT'}], 'test' : '$line'}"
 
-
+/root/datactrl list 90
