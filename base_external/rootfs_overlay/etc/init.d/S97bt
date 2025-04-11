@@ -3,7 +3,11 @@ case "$1" in
         start)
                 echo "Starting bt"
 				modprobe hci_uart
-				#/root/btpair.sh
+				sleep 10
+				if test -f /root/bt.conf; then
+					nohup /root/btctl.sh &
+				fi
+				
                 ;;
         stop)
                 echo "Stopping bt"
