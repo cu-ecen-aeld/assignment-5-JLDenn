@@ -1,0 +1,16 @@
+#!/bin/sh
+case "$1" in
+        start)
+                echo "Starting bt"
+				modprobe hci_uart
+				#/root/btpair.sh
+                ;;
+        stop)
+                echo "Stopping bt"
+                ;;
+        *)
+                echo "Usage: %0 {start|stop}"
+        exit 1
+esac
+
+exit 0

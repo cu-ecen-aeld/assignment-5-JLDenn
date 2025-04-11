@@ -1,1 +1,3 @@
-/etc/init.d/S98lddmodules f 755 0 0 - - - - -
+/etc/init.d/S96web f 755 0 0 - - - - -
+/etc/init.d/S97bt f 755 0 0 - - - - -
+/var/www/cgi-bin/tools f 755 0 0 - - - - -

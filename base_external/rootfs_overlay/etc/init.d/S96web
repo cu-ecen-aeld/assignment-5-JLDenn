@@ -1,0 +1,18 @@
+#!/bin/sh
+
+
+case "$1" in
+        start)
+                echo "Starting uhttpd"
+                start-stop-daemon  -n uhttpd -a /usr/bin/uhttpd -S -- -p 80 -h /var/www
+                ;;
+        stop)
+                echo "Stopping uhttpd"
+                start-stop-daemon -K -n uhttpd
+                ;;
+        *)
+                echo "Usage: %0 {start|stop}"
+        exit 1
+esac
+
+exit 0

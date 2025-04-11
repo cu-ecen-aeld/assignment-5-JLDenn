@@ -1,0 +1,5 @@
+
+config BR2_PACKAGE_COURSEPROJECT
+	bool "courseproject"
+	help
+	  Toolbox inventory system course project code/files

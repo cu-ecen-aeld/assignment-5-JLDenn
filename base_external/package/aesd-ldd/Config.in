@@ -1,5 +1,0 @@
-
-config BR2_PACKAGE_AESD_LDD
-	bool "aesd-ldd"
-	help
-	  Includes the scull component provided in the ldd directory

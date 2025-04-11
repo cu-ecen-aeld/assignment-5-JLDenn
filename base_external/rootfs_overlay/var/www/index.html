@@ -1,0 +1,32 @@
+<html>
+
+<script>
+function load() {
+	setInterval(function(){
+	
+		var xhttp = new XMLHttpRequest();
+		xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			document.getElementById("content").innerHTML = this.responseText;
+		}};
+		xhttp.open("GET", "/cgi-bin/tools", true);
+		xhttp.send();
+	
+	}, 1000);
+}
+</script>
+
+<body onload="load()">
+<h1>Test success!</h1>
+
+Thanks for playing!
+<div id="content"></div>
+
+<form action="/cgi-bin/tools" method=POST>
+Try the POST to /cgi-bin/tools <br>
+<input type="hidden" name="some_stuff" value="the stuff" />
+<input type="submit" value="Try..." />
+</form>
+
+</body>
+</html>
