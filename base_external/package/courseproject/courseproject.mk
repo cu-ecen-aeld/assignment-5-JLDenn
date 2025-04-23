@@ -4,7 +4,7 @@
 #
 ##############################################################
 
-COURSEPROJECT_VERSION = '6301737033440bfb750e8b1b86422e81606737a2'
+COURSEPROJECT_VERSION = 'a04b47938ea8412fe89b52335b8e066dfa065d94'
 COURSEPROJECT_SITE = 'git@github.com:cu-ecen-aeld/final-project-JLDenn.git'
 COURSEPROJECT_SITE_METHOD = git
 COURSEPROJECT_GIT_SUBMODULES = YES
