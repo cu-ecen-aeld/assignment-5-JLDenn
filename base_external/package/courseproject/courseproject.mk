@@ -18,6 +18,7 @@ define COURSEPROJECT_INSTALL_TARGET_CMDS
 	$(INSTALL) -m 0755 $(@D)/bt/*.sh $(TARGET_DIR)/root/
 	$(INSTALL) -m 0755 $(@D)/bt/*.exp $(TARGET_DIR)/root/
 	
+	$(INSTALL) -d 0755 $(TARGET_DIR)/var/www/
 	$(INSTALL) -m 0644 $(@D)/web/*.html $(TARGET_DIR)/var/www/
 	
 	$(INSTALL) -d 0755 $(@D)/web/cgi-bin/ $(TARGET_DIR)/var/www/cgi-bin/
